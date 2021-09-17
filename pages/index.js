@@ -24,7 +24,10 @@ export default function Home() {
           <div className="d-flex justify-content-between">
             <h5 className="mb-1">Tecnologías utilizadas</h5>
           </div>
-          <p className="mb-1">ReactJS y Bootstrap</p>
+          <p className="mb-1">
+            NextJS y Bootstrap para el front-end y Firebase para autenticación y
+            como back-end
+          </p>
           <small className="text-muted">
             Diseños basados en la documentación de Bootstrap
           </small>
