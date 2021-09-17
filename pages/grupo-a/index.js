@@ -23,9 +23,9 @@ const grupoA = ({
   );
 
   return (
-    <div>
+    <>
       <Schedule schedule={schedule} />
-    </div>
+    </>
   );
 };
 
