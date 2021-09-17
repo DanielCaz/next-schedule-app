@@ -26,7 +26,7 @@ const grupoA = ({
   return (
     <>
       <Meta title="Horario 5A ISC" />
-      <Schedule schedule={schedule} />
+      <Schedule schedule={schedule} caption="Horario 5A" />
     </>
   );
 };

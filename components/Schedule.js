@@ -1,9 +1,10 @@
 import TableRow from "../components/TableRow";
 
-const Schedule = ({ schedule }) => {
+const Schedule = ({ schedule, caption }) => {
   return (
     <div className="table-responsive">
       <table className="table table-dark table-striped table-bordered">
+        <caption className="bg-info text-dark w-25 px-2">{caption}</caption>
         <thead>
           <tr>
             <th scope="col">Día/Hora</th>
