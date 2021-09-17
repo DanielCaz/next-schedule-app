@@ -2,6 +2,7 @@ import app from "../../firebase";
 import { getFirestore, getDoc, doc } from "firebase/firestore";
 import { getSchedule } from "../../scheduleDataB";
 import Schedule from "../../components/Schedule";
+import Meta from "../../components/Meta";
 
 const grupoB = ({
   claseLengInt,
@@ -24,6 +25,7 @@ const grupoB = ({
 
   return (
     <>
+      <Meta title="Horario 5B ISC" />
       <Schedule schedule={schedule} />
     </>
   );
