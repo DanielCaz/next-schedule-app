@@ -1,5 +1,6 @@
 import app from "../firebase";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import loginPageStyles from "../styles/LoginPage.module.scss";
 
 const LoginPage = ({ onSignIn }) => {
   const auth = getAuth(app);
@@ -16,7 +17,7 @@ const LoginPage = ({ onSignIn }) => {
   };
 
   return (
-    <div className="signin bg-white m-4 p-3 d-flex flex-column w-75">
+    <div className={loginPageStyles.container}>
       <h2>Mis Links</h2>
       <p>
         ¡Inicia sesión para para guardar tus propios links para fácil acceso!

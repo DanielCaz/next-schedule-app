@@ -5,7 +5,7 @@ import UserLinks from "../../components/UserLinks";
 import LoginPage from "../../components/LoginPage";
 import { getFirestore, doc, setDoc } from "firebase/firestore";
 
-const misLinks = () => {
+const MisLinks = () => {
   const auth = getAuth(app);
   const db = getFirestore(app);
 
@@ -44,7 +44,7 @@ const misLinks = () => {
   };
 
   return (
-    <div className="d-flex justify-content-center">
+    <div className="d-flex justify-content-center p-4 w-100">
       {!isLoading &&
         (signedIn ? (
           <UserLinks onSignOut={onSignOut} />
@@ -55,4 +55,4 @@ const misLinks = () => {
   );
 };
 
-export default misLinks;
+export default MisLinks;

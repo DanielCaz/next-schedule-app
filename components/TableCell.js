@@ -6,6 +6,7 @@ const TableCell = ({ hours, name, meetingUrl }) => {
           className="text-decoration-none text-white"
           href={meetingUrl}
           target="_blank"
+          rel="noreferrer"
         >
           {name}
         </a>

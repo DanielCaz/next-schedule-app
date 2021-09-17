@@ -1,0 +1,21 @@
+.container {
+  background-color: white;
+  padding: 1em;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+
+  .btn-primary {
+    margin: 5em;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 75%;
+  }
+}

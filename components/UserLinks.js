@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 import app from "../firebase";
 import CustomLink from "../components/CustomLink";
 import AddCustomLink from "../components/AddCustomLink";
+import userLinksStyles from "../styles/UserLinks.module.scss";
 
 const UserLinks = ({ onSignOut }) => {
   const auth = getAuth(app);
@@ -75,7 +76,7 @@ const UserLinks = ({ onSignOut }) => {
   };
 
   return (
-    <div className="signout bg-white m-4 p-3 d-flex flex-column w-75">
+    <div className={userLinksStyles.container}>
       <h2>Mis Links</h2>
       <button
         className={`btn ${
