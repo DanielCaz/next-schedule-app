@@ -5,10 +5,10 @@ import UserLinks from "../../components/UserLinks";
 import LoginPage from "../../components/LoginPage";
 import { getFirestore, doc, setDoc } from "firebase/firestore";
 
-const MisLinks = () => {
-  const auth = getAuth(app);
-  const db = getFirestore(app);
+const auth = getAuth(app);
+const db = getFirestore(app);
 
+const MisLinks = () => {
   const [signedIn, setSignedIn] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 

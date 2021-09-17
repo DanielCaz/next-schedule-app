@@ -14,10 +14,10 @@ import CustomLink from "../components/CustomLink";
 import AddCustomLink from "../components/AddCustomLink";
 import userLinksStyles from "../styles/UserLinks.module.scss";
 
-const UserLinks = ({ onSignOut }) => {
-  const auth = getAuth(app);
-  const db = getFirestore(app);
+const auth = getAuth(app);
+const db = getFirestore(app);
 
+const UserLinks = ({ onSignOut }) => {
   const [myLinks, setMyLinks] = useState([]);
   const [showAddLink, setShowAddLink] = useState(false);
 
