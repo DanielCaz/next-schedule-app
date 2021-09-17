@@ -1,7 +1,9 @@
 const claseLibre = {
   id: "1",
-  name: "Libre",
-  meetingUrl: "",
+  data: {
+    name: "Libre",
+    meetingUrl: "",
+  },
 };
 
 export const getSchedule = (
@@ -16,161 +18,161 @@ export const getSchedule = (
   return [
     {
       id: 1,
-      dia: "Lunes",
-      clases: [
+      day: "Lunes",
+      classes: [
         {
           id: 1,
-          clase: claseLengInt,
-          horas: 2,
+          classObj: claseLengInt,
+          hours: 2,
         },
         {
           id: 2,
-          clase: claseArq,
-          horas: 1,
+          classObj: claseArq,
+          hours: 1,
         },
         {
           id: 3,
-          clase: claseWeb,
-          horas: 1,
+          classObj: claseWeb,
+          hours: 1,
         },
         {
           id: 4,
-          clase: claseSim,
-          horas: 2,
+          classObj: claseSim,
+          hours: 2,
         },
         {
           id: 5,
-          clase: claseLibre,
-          horas: 1,
+          classObj: claseLibre,
+          hours: 1,
         },
       ],
     },
     {
       id: 2,
-      dia: "Martes",
-      clases: [
+      day: "Martes",
+      classes: [
         {
           id: 1,
-          clase: claseLengAut,
-          horas: 2,
+          classObj: claseLengAut,
+          hours: 2,
         },
         {
           id: 2,
-          clase: claseArq,
-          horas: 1,
+          classObj: claseArq,
+          hours: 1,
         },
         {
           id: 3,
-          clase: claseWeb,
-          horas: 1,
+          classObj: claseWeb,
+          hours: 1,
         },
         {
           id: 4,
-          clase: claseTaller,
-          horas: 2,
+          classObj: claseTaller,
+          hours: 2,
         },
         {
           id: 5,
-          clase: claseLibre,
-          horas: 1,
+          classObj: claseLibre,
+          hours: 1,
         },
       ],
     },
     {
       id: 3,
-      dia: "Miércoles",
-      clases: [
+      day: "Miércoles",
+      classes: [
         {
           id: 1,
-          clase: claseLengInt,
-          horas: 2,
+          classObj: claseLengInt,
+          hours: 2,
         },
         {
           id: 2,
-          clase: claseFund,
-          horas: 1,
+          classObj: claseFund,
+          hours: 1,
         },
         {
           id: 3,
-          clase: claseArq,
-          horas: 1,
+          classObj: claseArq,
+          hours: 1,
         },
         {
           id: 4,
-          clase: claseTaller,
-          horas: 1,
+          classObj: claseTaller,
+          hours: 1,
         },
         {
           id: 5,
-          clase: claseSim,
-          horas: 1,
+          classObj: claseSim,
+          hours: 1,
         },
         {
           id: 6,
-          clase: claseLibre,
-          horas: 1,
+          classObj: claseLibre,
+          hours: 1,
         },
       ],
     },
     {
       id: 4,
-      dia: "Jueves",
-      clases: [
+      day: "Jueves",
+      classes: [
         {
           id: 1,
-          clase: claseLengAut,
-          horas: 2,
+          classObj: claseLengAut,
+          hours: 2,
         },
         {
           id: 2,
-          clase: claseFund,
-          horas: 1,
+          classObj: claseFund,
+          hours: 1,
         },
         {
           id: 3,
-          clase: claseArq,
-          horas: 2,
+          classObj: claseArq,
+          hours: 2,
         },
         {
           id: 4,
-          clase: claseSim,
-          horas: 1,
+          classObj: claseSim,
+          hours: 1,
         },
         {
           id: 5,
-          clase: claseWeb,
-          horas: 1,
+          classObj: claseWeb,
+          hours: 1,
         },
       ],
     },
     {
       id: 5,
-      dia: "Viernes",
-      clases: [
+      day: "Viernes",
+      classes: [
         {
           id: 1,
-          clase: claseLengInt,
-          horas: 1,
+          classObj: claseLengInt,
+          hours: 1,
         },
         {
           id: 2,
-          clase: claseFund,
-          horas: 2,
+          classObj: claseFund,
+          hours: 2,
         },
         {
           id: 3,
-          clase: claseTaller,
-          horas: 1,
+          classObj: claseTaller,
+          hours: 1,
         },
         {
           id: 4,
-          clase: claseSim,
-          horas: 1,
+          classObj: claseSim,
+          hours: 1,
         },
         {
           id: 5,
-          clase: claseWeb,
-          horas: 2,
+          classObj: claseWeb,
+          hours: 2,
         },
       ],
     },
