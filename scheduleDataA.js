@@ -22,7 +22,7 @@ export const getSchedule = (
       classes: [
         {
           id: 1,
-          classObj: claseLengInt,
+          classObj: claseLengAut,
           hours: 2,
         },
         {
@@ -53,7 +53,7 @@ export const getSchedule = (
       classes: [
         {
           id: 1,
-          classObj: claseLengAut,
+          classObj: claseLengInt,
           hours: 2,
         },
         {
@@ -84,7 +84,7 @@ export const getSchedule = (
       classes: [
         {
           id: 1,
-          classObj: claseLengInt,
+          classObj: claseLengAut,
           hours: 2,
         },
         {
@@ -120,7 +120,7 @@ export const getSchedule = (
       classes: [
         {
           id: 1,
-          classObj: claseLengAut,
+          classObj: claseLengInt,
           hours: 2,
         },
         {
@@ -151,7 +151,7 @@ export const getSchedule = (
       classes: [
         {
           id: 1,
-          classObj: claseLengInt,
+          classObj: claseLengAut,
           hours: 1,
         },
         {
