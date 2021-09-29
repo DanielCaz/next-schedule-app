@@ -15,6 +15,7 @@ const Schedule = ({ schedule, caption }) => {
             <th scope="col">11:00</th>
             <th scope="col">12:00</th>
             <th scope="col">13:00</th>
+            <th scope="col">14:00</th>
           </tr>
         </thead>
         <tbody>

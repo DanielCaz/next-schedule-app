@@ -12,6 +12,7 @@ const grupoA = ({
   claseWeb,
   claseArq,
   claseTaller,
+  claseTutorias,
 }) => {
   const schedule = getSchedule(
     claseLengInt,
@@ -20,7 +21,8 @@ const grupoA = ({
     claseFund,
     claseWeb,
     claseArq,
-    claseTaller
+    claseTaller,
+    claseTutorias
   );
 
   return (
@@ -48,6 +50,8 @@ export const getStaticProps = async () => {
   const claseArq = { id: docSnap.id, data: docSnap.data() };
   docSnap = await getDoc(doc(db, "clases_a", "uKBgIWSvkKiMEeVQ6Iln"));
   const claseTaller = { id: docSnap.id, data: docSnap.data() };
+  docSnap = await getDoc(doc(db, "clases_a", "loiNNO0rW0x5lczC8ki7"));
+  const claseTutorias = { id: docSnap.id, data: docSnap.data() };
 
   return {
     props: {
@@ -58,6 +62,7 @@ export const getStaticProps = async () => {
       claseWeb,
       claseArq,
       claseTaller,
+      claseTutorias,
     },
   };
 };

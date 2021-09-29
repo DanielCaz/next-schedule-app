@@ -13,7 +13,8 @@ export const getSchedule = (
   claseFund,
   claseWeb,
   claseArq,
-  claseTaller
+  claseTaller,
+  claseTutorias
 ) => {
   return [
     {
@@ -43,7 +44,7 @@ export const getSchedule = (
         {
           id: 5,
           classObj: claseLibre,
-          hours: 1,
+          hours: 2,
         },
       ],
     },
@@ -74,7 +75,7 @@ export const getSchedule = (
         {
           id: 5,
           classObj: claseLibre,
-          hours: 1,
+          hours: 2,
         },
       ],
     },
@@ -110,7 +111,7 @@ export const getSchedule = (
         {
           id: 6,
           classObj: claseLibre,
-          hours: 1,
+          hours: 2,
         },
       ],
     },
@@ -143,6 +144,11 @@ export const getSchedule = (
           classObj: claseWeb,
           hours: 1,
         },
+        {
+          id: 6,
+          classObj: claseLibre,
+          hours: 1,
+        },
       ],
     },
     {
@@ -173,6 +179,11 @@ export const getSchedule = (
           id: 5,
           classObj: claseWeb,
           hours: 2,
+        },
+        {
+          id: 6,
+          classObj: claseTutorias,
+          hours: 1,
         },
       ],
     },
