@@ -25,10 +25,45 @@ const grupoA = ({
     claseTutorias
   );
 
+  const headers = [
+    {
+      id: 1,
+      text: "7:00",
+    },
+    {
+      id: 2,
+      text: "8:00",
+    },
+    {
+      id: 3,
+      text: "9:00",
+    },
+    {
+      id: 4,
+      text: "10:00",
+    },
+    {
+      id: 5,
+      text: "11:00",
+    },
+    {
+      id: 6,
+      text: "12:00",
+    },
+    {
+      id: 7,
+      text: "13:00",
+    },
+    {
+      id: 8,
+      text: "14:00",
+    },
+  ];
+
   return (
     <>
       <Meta title="Horario 5A ISC" />
-      <Schedule schedule={schedule} caption="Horario 5A" />
+      <Schedule schedule={schedule} caption="Horario 5A" headers={headers} />
     </>
   );
 };

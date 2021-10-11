@@ -3,6 +3,7 @@ import { getFirestore, getDoc, doc } from "firebase/firestore";
 import { getSchedule } from "../../scheduleDataB";
 import Schedule from "../../components/Schedule";
 import Meta from "../../components/Meta";
+import { useEffect } from "react";
 
 const grupoB = ({
   claseLengInt,
@@ -23,10 +24,41 @@ const grupoB = ({
     claseTaller
   );
 
+  const headers = [
+    {
+      id: 1,
+      text: "7:00",
+    },
+    {
+      id: 2,
+      text: "8:00",
+    },
+    {
+      id: 3,
+      text: "9:00",
+    },
+    {
+      id: 4,
+      text: "10:00",
+    },
+    {
+      id: 5,
+      text: "11:00",
+    },
+    {
+      id: 6,
+      text: "12:00",
+    },
+    {
+      id: 7,
+      text: "13:00",
+    },
+  ];
+
   return (
     <>
       <Meta title="Horario 5B ISC" />
-      <Schedule schedule={schedule} caption="Horario 5B" />
+      <Schedule schedule={schedule} caption="Horario 5B" headers={headers} />
     </>
   );
 };

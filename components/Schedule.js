@@ -1,6 +1,6 @@
 import TableRow from "../components/TableRow";
 
-const Schedule = ({ schedule, caption }) => {
+const Schedule = ({ schedule, caption, headers }) => {
   return (
     <div className="table-responsive">
       <table className="table table-dark table-striped table-bordered">
@@ -8,14 +8,13 @@ const Schedule = ({ schedule, caption }) => {
         <thead>
           <tr>
             <th scope="col">Día/Hora</th>
-            <th scope="col">7:00</th>
-            <th scope="col">8:00</th>
-            <th scope="col">9:00</th>
-            <th scope="col">10:00</th>
-            <th scope="col">11:00</th>
-            <th scope="col">12:00</th>
-            <th scope="col">13:00</th>
-            <th scope="col">14:00</th>
+            {headers.map((header) => {
+              return (
+                <th key={header.id} scope="col">
+                  {header.text}
+                </th>
+              );
+            })}
           </tr>
         </thead>
         <tbody>
