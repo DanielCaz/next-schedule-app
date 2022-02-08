@@ -25,12 +25,12 @@ const claseLibre: ClassType = {
 };
 
 export const getSchedule = (
-  claseTSO: ClassType,
   claseABD: ClassType,
   claseFIS: ClassType,
   claseG: ClassType,
   claseLA: ClassType,
-  claseRDC: ClassType
+  claseRDC: ClassType,
+  claseTSO: ClassType
 ): scheduleType => {
   return [
     {
