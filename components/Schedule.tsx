@@ -1,6 +1,32 @@
-import TableRow from "../components/TableRow";
+import TableRow from "./TableRow";
 
-const Schedule = ({ schedule, caption, headers }) => {
+type ClassType = {
+  id: string;
+  data: {
+    name: string;
+    meetingUrl: string;
+  };
+};
+
+type scheduleType = {
+  id: number;
+  day: string;
+  classes: {
+    id: number;
+    classObj: ClassType;
+    hours: number;
+  }[];
+}[];
+
+const Schedule = ({
+  schedule,
+  caption,
+  headers,
+}: {
+  schedule: scheduleType;
+  caption: string;
+  headers: { id: number; text: string }[];
+}) => {
   return (
     <div className="table-responsive">
       <table className="table table-dark table-striped table-bordered">

@@ -4,7 +4,7 @@ import Link from "next/link";
 const Layout = ({ children }) => {
   return (
     <div>
-      <Meta title="Horarios 5° ISC" />
+      <Meta title="Horarios 6° ISC" />
       <header>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">

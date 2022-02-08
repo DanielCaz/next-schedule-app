@@ -1,4 +1,12 @@
-const TableCell = ({ hours, name, meetingUrl }) => {
+const TableCell = ({
+  hours,
+  name,
+  meetingUrl,
+}: {
+  hours: number;
+  name: string;
+  meetingUrl: string;
+}) => {
   return (
     <td colSpan={hours}>
       {meetingUrl ? (

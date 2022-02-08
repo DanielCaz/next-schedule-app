@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const Meta = ({ title }) => {
+const Meta = ({ title }: { title: string }) => {
   return (
     <Head>
       <title>{title}</title>
@@ -8,7 +8,7 @@ const Meta = ({ title }) => {
       <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
       <meta
         name="description"
-        content="Horarios para los grupos 5A y 5B de la carrera ISC del ITES Zamora"
+        content="Horarios para los grupos 6A y 6B de la carrera ISC del ITES Zamora"
       />
       <meta name="keywords" content="isc, itesz, horario" />
       <link

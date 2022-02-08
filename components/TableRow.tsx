@@ -1,6 +1,24 @@
-import TableCell from "../components/TableCell";
+import TableCell from "./TableCell";
 
-const TableRow = ({ dayClasses, dayName }) => {
+type ClassType = {
+  id: string;
+  data: {
+    name: string;
+    meetingUrl: string;
+  };
+};
+
+const TableRow = ({
+  dayClasses,
+  dayName,
+}: {
+  dayClasses: {
+    id: number;
+    classObj: ClassType;
+    hours: number;
+  }[];
+  dayName: string;
+}) => {
   return (
     <tr>
       <th scope="row">{dayName}</th>

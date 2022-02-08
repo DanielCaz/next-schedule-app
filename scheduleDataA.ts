@@ -1,4 +1,22 @@
-const claseLibre = {
+type ClassType = {
+  id: string;
+  data: {
+    name: string;
+    meetingUrl: string;
+  };
+};
+
+type scheduleType = {
+  id: number;
+  day: string;
+  classes: {
+    id: number;
+    classObj: ClassType;
+    hours: number;
+  }[];
+}[];
+
+const claseLibre: ClassType = {
   id: "1",
   data: {
     name: "Libre",
@@ -7,15 +25,13 @@ const claseLibre = {
 };
 
 export const getSchedule = (
-  claseLengInt,
-  claseSim,
-  claseLengAut,
-  claseFund,
-  claseWeb,
-  claseArq,
-  claseTaller,
-  claseTutorias
-) => {
+  claseTSO: ClassType,
+  claseABD: ClassType,
+  claseFIS: ClassType,
+  claseG: ClassType,
+  claseLA: ClassType,
+  claseRDC: ClassType
+): scheduleType => {
   return [
     {
       id: 1,
@@ -23,28 +39,28 @@ export const getSchedule = (
       classes: [
         {
           id: 1,
-          classObj: claseLengAut,
-          hours: 2,
-        },
-        {
-          id: 2,
-          classObj: claseArq,
+          classObj: claseG,
           hours: 1,
         },
         {
+          id: 2,
+          classObj: claseLA,
+          hours: 2,
+        },
+        {
           id: 3,
-          classObj: claseWeb,
+          classObj: claseFIS,
           hours: 1,
         },
         {
           id: 4,
-          classObj: claseSim,
+          classObj: claseLibre,
           hours: 2,
         },
         {
           id: 5,
-          classObj: claseLibre,
-          hours: 2,
+          classObj: claseTSO,
+          hours: 1,
         },
       ],
     },
@@ -54,28 +70,28 @@ export const getSchedule = (
       classes: [
         {
           id: 1,
-          classObj: claseLengInt,
+          classObj: claseRDC,
           hours: 2,
         },
         {
           id: 2,
-          classObj: claseArq,
-          hours: 1,
+          classObj: claseABD,
+          hours: 2,
         },
         {
           id: 3,
-          classObj: claseWeb,
+          classObj: claseTSO,
           hours: 1,
         },
         {
           id: 4,
-          classObj: claseTaller,
-          hours: 2,
+          classObj: claseLibre,
+          hours: 1,
         },
         {
           id: 5,
-          classObj: claseLibre,
-          hours: 2,
+          classObj: claseFIS,
+          hours: 1,
         },
       ],
     },
@@ -85,33 +101,28 @@ export const getSchedule = (
       classes: [
         {
           id: 1,
-          classObj: claseLengAut,
+          classObj: claseG,
           hours: 2,
         },
         {
           id: 2,
-          classObj: claseFund,
-          hours: 1,
+          classObj: claseLibre,
+          hours: 2,
         },
         {
           id: 3,
-          classObj: claseArq,
+          classObj: claseFIS,
           hours: 1,
         },
         {
           id: 4,
-          classObj: claseTaller,
+          classObj: claseLibre,
           hours: 1,
         },
         {
           id: 5,
-          classObj: claseSim,
+          classObj: claseTSO,
           hours: 1,
-        },
-        {
-          id: 6,
-          classObj: claseLibre,
-          hours: 2,
         },
       ],
     },
@@ -121,33 +132,23 @@ export const getSchedule = (
       classes: [
         {
           id: 1,
-          classObj: claseLengInt,
+          classObj: claseLibre,
           hours: 2,
         },
         {
           id: 2,
-          classObj: claseFund,
-          hours: 1,
-        },
-        {
-          id: 3,
-          classObj: claseArq,
+          classObj: claseABD,
           hours: 2,
         },
         {
+          id: 3,
+          classObj: claseTSO,
+          hours: 1,
+        },
+        {
           id: 4,
-          classObj: claseSim,
-          hours: 1,
-        },
-        {
-          id: 5,
-          classObj: claseWeb,
-          hours: 1,
-        },
-        {
-          id: 6,
           classObj: claseLibre,
-          hours: 1,
+          hours: 2,
         },
       ],
     },
@@ -157,33 +158,33 @@ export const getSchedule = (
       classes: [
         {
           id: 1,
-          classObj: claseLengAut,
+          classObj: claseG,
           hours: 1,
         },
         {
           id: 2,
-          classObj: claseFund,
-          hours: 2,
+          classObj: claseRDC,
+          hours: 1,
         },
         {
           id: 3,
-          classObj: claseTaller,
+          classObj: claseABD,
           hours: 1,
         },
         {
           id: 4,
-          classObj: claseSim,
+          classObj: claseLA,
           hours: 1,
-        },
-        {
-          id: 5,
-          classObj: claseWeb,
-          hours: 2,
         },
         {
           id: 6,
-          classObj: claseTutorias,
+          classObj: claseFIS,
           hours: 1,
+        },
+        {
+          id: 7,
+          classObj: claseLibre,
+          hours: 2,
         },
       ],
     },

@@ -10,8 +10,8 @@ import {
 } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import app from "../firebase";
-import CustomLink from "../components/CustomLink";
-import AddCustomLink from "../components/AddCustomLink";
+import CustomLink from "./CustomLink";
+import AddCustomLink from "./AddCustomLink";
 import userLinksStyles from "../styles/UserLinks.module.scss";
 
 const auth = getAuth(app);
