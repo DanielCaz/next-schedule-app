@@ -1,12 +1,5 @@
 import TableCell from "./TableCell";
-
-type ClassType = {
-  id: string;
-  data: {
-    name: string;
-    meetingUrl: string;
-  };
-};
+import { ClassType } from "../CustomTypes";
 
 const TableRow = ({
   dayClasses,

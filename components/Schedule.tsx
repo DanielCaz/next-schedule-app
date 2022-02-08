@@ -1,22 +1,5 @@
 import TableRow from "./TableRow";
-
-type ClassType = {
-  id: string;
-  data: {
-    name: string;
-    meetingUrl: string;
-  };
-};
-
-type scheduleType = {
-  id: number;
-  day: string;
-  classes: {
-    id: number;
-    classObj: ClassType;
-    hours: number;
-  }[];
-}[];
+import { scheduleType } from "../CustomTypes";
 
 const Schedule = ({
   schedule,
