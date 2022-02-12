@@ -1,5 +1,11 @@
 import app from "../../firebase";
-import { getFirestore, getDoc, doc } from "firebase/firestore";
+import {
+  getFirestore,
+  getDoc,
+  doc,
+  getDocs,
+  collection,
+} from "firebase/firestore";
 import Schedule from "../../components/Schedule";
 import Meta from "../../components/Meta";
 
@@ -49,38 +55,73 @@ export const getServerSideProps = async () => {
   const schedule = [];
 
   let docSnap = await getDoc(doc(db, "clases_a", "Monday"));
+  let classes = [];
+  let querySnapshot = await getDocs(
+    collection(db, "clases_a", "Monday", "classes")
+  );
+  querySnapshot.forEach((doc) => {
+    classes.push({ ...doc.data(), id: doc.id });
+  });
   schedule.push({
     id: docSnap.id,
     day: docSnap.data().day,
-    classes: docSnap.data().classes,
+    classes: classes,
   });
 
   docSnap = await getDoc(doc(db, "clases_a", "Tuesday"));
+  classes = [];
+  querySnapshot = await getDocs(
+    collection(db, "clases_a", "Tuesday", "classes")
+  );
+  querySnapshot.forEach((doc) => {
+    classes.push({ ...doc.data(), id: doc.id });
+  });
   schedule.push({
     id: docSnap.id,
     day: docSnap.data().day,
-    classes: docSnap.data().classes,
+    classes: classes,
   });
 
   docSnap = await getDoc(doc(db, "clases_a", "Wednesday"));
+  classes = [];
+  querySnapshot = await getDocs(
+    collection(db, "clases_a", "Wednesday", "classes")
+  );
+  querySnapshot.forEach((doc) => {
+    classes.push({ ...doc.data(), id: doc.id });
+  });
   schedule.push({
     id: docSnap.id,
     day: docSnap.data().day,
-    classes: docSnap.data().classes,
+    classes: classes,
   });
 
   docSnap = await getDoc(doc(db, "clases_a", "Thursday"));
+  classes = [];
+  querySnapshot = await getDocs(
+    collection(db, "clases_a", "Thursday", "classes")
+  );
+  querySnapshot.forEach((doc) => {
+    classes.push({ ...doc.data(), id: doc.id });
+  });
   schedule.push({
     id: docSnap.id,
     day: docSnap.data().day,
-    classes: docSnap.data().classes,
+    classes: classes,
   });
 
   docSnap = await getDoc(doc(db, "clases_a", "Friday"));
+  classes = [];
+  querySnapshot = await getDocs(
+    collection(db, "clases_a", "Friday", "classes")
+  );
+  querySnapshot.forEach((doc) => {
+    classes.push({ ...doc.data(), id: doc.id });
+  });
   schedule.push({
     id: docSnap.id,
     day: docSnap.data().day,
-    classes: docSnap.data().classes,
+    classes: classes,
   });
 
   return {
