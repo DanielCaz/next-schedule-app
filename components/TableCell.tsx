@@ -2,10 +2,12 @@ const TableCell = ({
   hours,
   name,
   meetingUrl,
+  location,
 }: {
   hours: number;
   name: string;
   meetingUrl: string;
+  location: String;
 }) => {
   return (
     <td colSpan={hours}>
@@ -17,9 +19,10 @@ const TableCell = ({
           rel="noreferrer"
         >
           {name}
+          <p className="m-0 text-info">{location}</p>
         </a>
       ) : (
-        <span style={{ color: "gray" }}>{name}</span>
+        <span className="text-muted">{name}</span>
       )}
     </td>
   );

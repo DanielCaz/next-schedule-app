@@ -1,15 +1,11 @@
 import TableCell from "./TableCell";
-import { ClassType } from "../CustomTypes";
+import { classesType, classType } from "../CustomTypes";
 
 const TableRow = ({
   dayClasses,
   dayName,
 }: {
-  dayClasses: {
-    id: number;
-    classObj: ClassType;
-    hours: number;
-  }[];
+  dayClasses: classesType[];
   dayName: string;
 }) => {
   return (
@@ -22,6 +18,7 @@ const TableRow = ({
             hours={dayClass.hours}
             name={dayClass.classObj.data.name}
             meetingUrl={dayClass.classObj.data.meetingUrl}
+            location={dayClass.location}
           />
         );
       })}

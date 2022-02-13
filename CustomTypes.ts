@@ -1,4 +1,4 @@
-export type ClassType = {
+export type classType = {
   id: number;
   data: {
     name: string;
@@ -6,12 +6,15 @@ export type ClassType = {
   };
 };
 
+export type classesType = {
+  id: number;
+  classObj: classType;
+  hours: number;
+  location: String;
+};
+
 export type scheduleType = {
   id: number;
   day: string;
-  classes: {
-    id: number;
-    classObj: ClassType;
-    hours: number;
-  }[];
+  classes: classesType[];
 }[];
