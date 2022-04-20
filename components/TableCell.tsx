@@ -13,7 +13,7 @@ const TableCell = ({
     const cells = [];
     for (let i = 0; i < hours; i++) {
       cells.push(
-        <td>
+        <td key={i}>
           {meetingUrl ? (
             <a
               className="text-decoration-none text-white"

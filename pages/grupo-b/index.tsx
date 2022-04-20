@@ -48,7 +48,7 @@ const grupoB = ({ schedule }) => {
     </>
   );
 };
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const db = getFirestore(app);
 
   const schedule = [];
